@@ -37,5 +37,24 @@ return array(
 
     'cycle_stat' => 'Pool has %d posts, %d rotated per day, one round takes about %d days (from %s; %s).',
 
+    'update_section' => 'GitHub auto-update',
+    'update_repo' => 'GitHub repository',
+    'update_repo_note' => 'owner/repo, or just paste the repository URL, e.g. hexoblog-web-site/Everfresh. Invalid values fall back to the default.',
+    'update_branch' => 'Branch',
+    'update_auto' => 'Auto check',
+    'update_auto_note' => 'check when the admin page opens, every',
+    'update_interval_unit' => 'hours',
+    'update_auto_tip' => 'Only checks and reports; it never installs by itself. Use "Update now" below to apply.',
+    'update_have_new' => 'new version %s',
+    'update_is_latest' => 'up to date',
+    'update_last_check' => 'Last check',
+    'update_never_checked' => 'never checked',
+    'update_remote_commit' => 'latest commit',
+    'update_btn_check' => 'Check for updates',
+    'update_btn_apply' => 'Update now',
+    'update_tip' => 'Backs up first and rolls back on failure. Only plugin files are replaced; settings live in the database.',
+    'update_backups' => 'Backups (click to roll back):',
+    'update_running' => 'Working…',
+
     'home_note' => 'Only the first homepage page is affected; category, tag, article, search and admin lists are untouched. If the site uses full-page static cache, clear it once.',
 );

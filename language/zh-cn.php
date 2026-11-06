@@ -37,5 +37,24 @@ return array(
 
     'cycle_stat' => '候选池 %d 篇，每天翻新 %d 篇，一轮约 %d 天（%s 起，%s）。',
 
+    'update_section' => 'GitHub 自动更新',
+    'update_repo' => 'GitHub 仓库',
+    'update_repo_note' => '填 owner/repo，也可以直接粘仓库链接，例如 hexoblog-web-site/Everfresh。格式不对会退回默认仓库。',
+    'update_branch' => '分支',
+    'update_auto' => '自动检查更新',
+    'update_auto_note' => '后台打开时自动检查，每',
+    'update_interval_unit' => '小时一次',
+    'update_auto_tip' => '只查询有没有新版并提示，不会自动安装。要真正升级请点下面的「立即更新」。',
+    'update_have_new' => '有新版 %s',
+    'update_is_latest' => '已是最新',
+    'update_last_check' => '上次检查',
+    'update_never_checked' => '尚未检查',
+    'update_remote_commit' => '最新提交',
+    'update_btn_check' => '检查更新',
+    'update_btn_apply' => '立即更新',
+    'update_tip' => '更新前自动备份、失败自动回滚；只覆盖插件自身的程序文件，设置存在数据库里不受影响。',
+    'update_backups' => '可用备份（点击回滚）：',
+    'update_running' => '处理中…',
+
     'home_note' => '只处理首页第一页；分类页、标签页、文章页、搜索结果和后台列表都不受影响。若站点开了整页静态缓存，需清一次缓存才生效。',
 );

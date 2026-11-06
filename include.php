@@ -40,7 +40,7 @@ function everfresh_EnsureConfig()
     global $zbp;
 
     $cfg = $zbp->Config('everfresh');
-    if ((int) $cfg->version >= 4) {
+    if ((int) $cfg->version >= 5) {
         return;
     }
 
@@ -54,6 +54,11 @@ function everfresh_EnsureConfig()
         'day_hours' => 12,
         'start_date' => '',
         'end_date' => '',
+        // GitHub 自动更新
+        'github_repo' => 'hexoblog-web-site/Everfresh',
+        'github_branch' => 'main',
+        'update_auto_check' => 1,
+        'update_interval' => 6,
     );
 
     // 从旧插件 ID「ghx_recycle」迁来设置：改名后 conf_Name 变了，
@@ -74,7 +79,7 @@ function everfresh_EnsureConfig()
             $cfg->$key = $value;
         }
     }
-    $cfg->version = 4;
+    $cfg->version = 5;
 
     $zbp->SaveConfig('everfresh');
 }

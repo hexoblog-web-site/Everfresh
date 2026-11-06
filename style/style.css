@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 文章回廊 · 后台设置页样式
+/* Everfresh 常新 · 后台设置页样式
    尺寸基准与 Z-Blog 后台表单控件对齐：控件高 32px、圆角 4px、注释 12px。 */
 
 .everfresh-settings .everfresh-table {
@@ -148,6 +148,156 @@
     font-size: 12px;
     line-height: 1.7;
     color: #888;
+}
+
+/* ---------- GitHub 自动更新 ---------- */
+
+.everfresh-settings .everfresh-repo {
+    width: 280px;
+}
+
+.everfresh-settings .everfresh-update {
+    margin: 18px 0 0;
+    padding: 16px 18px;
+    border: 1px solid #e3e6eb;
+    border-radius: 4px;
+    background: #fafbfc;
+}
+
+.everfresh-settings .everfresh-update form {
+    margin: 0;
+}
+
+.everfresh-settings .everfresh-update-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+    color: #1f2328;
+}
+
+.everfresh-settings .everfresh-badge {
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 4px;
+    background: #eef1f5;
+    color: #57606a;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.everfresh-settings .everfresh-badge.is-new {
+    background: #fdf0e6;
+    color: #b45309;
+}
+
+.everfresh-settings .everfresh-badge.is-ok {
+    background: #e8f5ee;
+    color: #0a8f4f;
+}
+
+.everfresh-settings .everfresh-update-meta {
+    margin: 8px 0 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #6b7280;
+    word-break: break-all;
+}
+
+.everfresh-settings .everfresh-update-meta code {
+    padding: 0 4px;
+    border-radius: 3px;
+    background: #eef1f5;
+    font-size: 12px;
+}
+
+.everfresh-settings .everfresh-update-alert {
+    margin: 8px 0 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.everfresh-settings .everfresh-update-alert.is-ok {
+    background: #e8f5ee;
+    color: #0a6b3d;
+}
+
+.everfresh-settings .everfresh-update-alert.is-bad {
+    background: #fdecec;
+    color: #b42318;
+}
+
+.everfresh-settings .everfresh-update-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 12px 0 0;
+}
+
+.everfresh-settings .everfresh-btn {
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0 16px;
+    border: 1px solid #d0d7de;
+    border-radius: 4px;
+    background: #fff;
+    color: #24292f;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background .18s ease, border-color .18s ease;
+}
+
+.everfresh-settings .everfresh-btn:hover {
+    background: #f3f4f6;
+}
+
+.everfresh-settings .everfresh-btn.is-primary {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: #fff;
+}
+
+.everfresh-settings .everfresh-btn.is-primary:hover {
+    border-color: #1d4ed8;
+    background: #1d4ed8;
+}
+
+.everfresh-settings .everfresh-btn.is-ghost {
+    height: 26px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #57606a;
+}
+
+.everfresh-settings .everfresh-btn[disabled] {
+    opacity: .55;
+    cursor: default;
+}
+
+.everfresh-settings .everfresh-btn.is-loading {
+    opacity: .75;
+    cursor: progress;
+}
+
+.everfresh-settings .everfresh-backups {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding-top: 12px;
+    border-top: 1px dashed #e3e6eb;
+}
+
+.everfresh-settings .everfresh-backup-item {
+    display: inline-flex;
+    margin: 0;
 }
 
 @media (max-width: 720px) {
