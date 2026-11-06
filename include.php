@@ -359,7 +359,10 @@ function everfresh_GetPoolTotal($startId)
 
     $total = -1;
     try {
-        $sql = $zbp->db->sql->Count($zbp->table['Post'], array('num' => '*'), everfresh_PoolWhere($key));
+        // 第二个参数必须是数字下标的 array('字段', '别名')：
+        // DbSql::Count() 在 count($countofnum) == 1 时会取 $countofnum[0]，
+        // 传关联数组（如 array('num' => '*')）会报 Undefined array key 0。
+        $sql = $zbp->db->sql->Count($zbp->table['Post'], array('*', 'num'), everfresh_PoolWhere($key));
         $total = everfresh_ReadNum($zbp->db->Query($sql));
     } catch (\Throwable $e) {
         $total = -1;

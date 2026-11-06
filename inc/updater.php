@@ -481,7 +481,7 @@ function everfresh_UpdateMaybeAuto($cfg)
 function everfresh_UpdateItems()
 {
     return array(
-        'files' => array('include.php', 'main.php', 'plugin.xml', 'logo.png', 'README.md', 'LICENSE'),
+        'files' => array('include.php', 'main.php', 'plugin.xml', 'logo.png', 'logo.svg', 'README.md', 'LICENSE'),
         'dirs' => array('language', 'style', 'inc'),
     );
 }

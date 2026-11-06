@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Everfresh 常新">
+  <defs>
+    <linearGradient id="everfreshBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#41E0A2"/>
+      <stop offset="1" stop-color="#059468"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="114" fill="url(#everfreshBg)"/>
+  <g fill="#FFFFFF">
+  <path d="M 356.34 145.12 Q 269.16 237.44 155.66 180.51 Q 242.84 88.19 356.34 145.12 Z"/>
+  <path d="M 301.85 398.34 Q 265.49 276.68 371.55 206.85 Q 407.91 328.51 301.85 398.34 Z"/>
+  <path d="M 109.81 224.54 Q 233.35 253.88 240.79 380.64 Q 117.25 351.30 109.81 224.54 Z"/>
+  </g>
+</svg>

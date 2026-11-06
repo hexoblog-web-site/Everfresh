@@ -1,3 +1,5 @@
+<img src="logo.svg" width="96" height="96" alt="Everfresh logo">
+
 # Everfresh · 常新
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
