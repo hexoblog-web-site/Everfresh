@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="php">
+<id>everfresh</id>
+<name>常新</name>
+<url>https://www.ghxi.com</url>
+<note>老文章按天翻上首页，日期显示为当天，让长期不更新的站点看起来每天都有新内容</note>
+<description>Everfresh 只改写首页第一页的列表：从指定文章 ID 起排队，每天往前推进若干篇（翻新篇数 + 固定保留篇数 = 每页篇数），一轮走完自动从头再来；列表日期统一落到当天，时刻散落在 0 点到指定小时之间。可选设结束日期，到那天自动停手。仅修改渲染结果，数据库、文章页、RSS 与 sitemap 保持真实时间，主题模板无需改动。</description>
+<path>main.php</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>果核剥壳</name>
+  <email></email>
+  <url></url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>173540</adapted>
+<version>2.0</version>
+<pubdate>2026-11-03</pubdate>
+<modified>2026-11-06</modified>
+<price>0</price>
+<phpver>8.2</phpver>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <existsfunctions></existsfunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+  <sidebar6></sidebar6>
+  <sidebar7></sidebar7>
+  <sidebar8></sidebar8>
+  <sidebar9></sidebar9>
+</sidebars>
+</plugin>

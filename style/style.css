@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* 文章回廊 · 后台设置页样式
+   尺寸基准与 Z-Blog 后台表单控件对齐：控件高 32px、圆角 4px、注释 12px。 */
+
+.everfresh-settings .everfresh-table {
+    width: 100%;
+}
+
+.everfresh-settings .everfresh-table th {
+    width: 22%;
+    vertical-align: top;
+    padding-top: 12px;
+}
+
+.everfresh-settings .everfresh-table th label {
+    cursor: pointer;
+}
+
+.everfresh-settings .everfresh-table td {
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* 一行内的多个控件：统一垂直居中，窄屏自动换行 */
+.everfresh-settings .everfresh-inline {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    vertical-align: middle;
+}
+
+.everfresh-settings .everfresh-inline > .everfresh-sep {
+    color: #666;
+    margin: 0 2px;
+}
+
+.everfresh-settings .everfresh-inline > .everfresh-hint {
+    color: #666;
+}
+
+.everfresh-settings .everfresh-inline > strong {
+    color: #2563eb;
+}
+
+/* 控件宽度：数字框短、日期框中、下拉框宽 */
+.everfresh-settings .everfresh-num-sm {
+    width: 90px;
+}
+
+.everfresh-settings .everfresh-num-md {
+    width: 110px;
+}
+
+.everfresh-settings .everfresh-date {
+    width: 160px;
+}
+
+.everfresh-settings .everfresh-select {
+    width: 40%;
+    min-width: 220px;
+}
+
+.everfresh-settings input.text,
+.everfresh-settings select.edit {
+    box-sizing: border-box;
+    height: 32px;
+    border-radius: 4px;
+}
+
+/* 字段说明文字 */
+.everfresh-settings .everfresh-note {
+    margin: 6px 0 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #888;
+}
+
+.everfresh-settings .everfresh-note-tight {
+    margin-top: 2px;
+}
+
+/* 循环统计行 */
+.everfresh-settings .everfresh-stat {
+    margin: 6px 0 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #0a8f4f;
+}
+
+/* 操作区 */
+.everfresh-settings .everfresh-actions {
+    margin: 20px 0 0;
+}
+
+.everfresh-settings .everfresh-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0 18px;
+    border: 0 !important;
+    border-radius: 4px !important;
+    background: #2563eb !important;
+    color: #fff !important;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background .18s ease;
+}
+
+.everfresh-settings .everfresh-save-btn:hover {
+    background: #1d4ed8 !important;
+}
+
+.everfresh-settings .everfresh-save-btn:active {
+    background: #1e40af !important;
+}
+
+.everfresh-settings .everfresh-save-btn:focus-visible {
+    outline: 2px solid rgba(37, 99, 235, .45);
+    outline-offset: 2px;
+}
+
+.everfresh-settings .everfresh-save-btn span {
+    color: #fff;
+}
+
+.everfresh-settings .everfresh-save-btn svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    flex: 0 0 auto;
+    stroke: currentColor;
+}
+
+.everfresh-settings .everfresh-footer-note {
+    margin: 14px 0 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #888;
+}
+
+@media (max-width: 720px) {
+    .everfresh-settings .everfresh-table th {
+        width: 30%;
+    }
+
+    .everfresh-settings .everfresh-select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .everfresh-settings .everfresh-save-btn {
+        width: 100%;
+    }
+}
